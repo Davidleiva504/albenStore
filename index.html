@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>AlbenStore</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+  <style>
+    /* Estilos para la barra de navegación con degradado de color */
+.navbar-expand-lg.bg-body-tertiary {
+    background: linear-gradient(to right, #4d6de3, #203376);
+     /*Color para la letras*/
+    
+}
+/* Cambiar el color del texto dentro de la barra de navegación */
+.navbar-expand-lg.bg-body-tertiary .navbar-nav .nav-link {
+    color: white;
+    
+}
+/* Cambiar color del sub menu */
+.dropdown-menu{
+  background: linear-gradient(to right, #4d6de3, #203376);
+  
+}
+/* Cambiar color de las letras del munu */
+.dropdown-item{
+  color: white;
+}
+.navbar-brand{
+  background: linear-gradient(to right, yellow 10%, rgb(7, 245, 213) 50%, red 30%, orange 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+  </style>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">AlbenStore</a>
+      
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Acerca</a>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Productos
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Sublimado</a></li>
+              <li><a class="dropdown-item" href="#">Serigrafia</a></li>
+              <li><a class="dropdown-item" href="#">Grabados laser</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contactanos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>
