@@ -1,0 +1,28 @@
+    /* Estilos para la barra de navegación con degradado de color */
+    .navbar-expand-lg.bg-body-tertiary {
+        background: linear-gradient(to right, #4d6de3, #203376);
+         /*Color para la letras*/
+        
+    }
+    /* Cambiar el color del texto dentro de la barra de navegación */
+    .navbar-expand-lg.bg-body-tertiary .navbar-nav .nav-link {
+        color: white;
+        
+    }
+    /* Cambiar color del sub menu */
+    .dropdown-menu{
+      background: linear-gradient(to right, #4d6de3, #203376);
+      
+    }
+    /* Cambiar color de las letras del munu */
+    .dropdown-item{
+      color: white;
+    }
+    /*color de el logo de la empresa*/
+    .navbar-brand{
+      background: linear-gradient(to right, yellow 10%, rgb(7, 245, 213) 50%, red 30%, orange 90%);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        display: inline-block;
+    }
