@@ -26,3 +26,30 @@
         color: transparent;
         display: inline-block;
     }
+
+    #frameContainer {
+      margin-left: 50px;
+      display:flex;
+      justify-content: left;
+      align-items: center;
+      height: 70vh;
+    }
+
+    /* Marco del carrusel */
+    .carousel-frame {
+      width: 40%;
+      border: 2px solid white;
+      overflow: hidden;
+    }
+
+    /* Estilo para el carrusel */
+    #customCarousel {
+      width: 100%;
+    }
+
+    /* Estilo para las imágenes dentro del carrusel */
+    #customCarousel .carousel-inner img {
+      width: 100%;
+      height: 400px;
+      object-fit: contain;
+    }

@@ -11,6 +11,34 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+  <style>
+     #frameContainer {
+      margin-left: 50px;
+      display:flex;
+      justify-content: left;
+      align-items: center;
+      height: 70vh;
+    }
+
+    /* Marco del carrusel */
+    .carousel-frame {
+      width: 40%;
+      border: 2px solid white;
+      overflow: hidden;
+    }
+
+    /* Estilo para el carrusel */
+    #customCarousel {
+      width: 100%;
+    }
+
+    /* Estilo para las imágenes dentro del carrusel */
+    #customCarousel .carousel-inner img {
+      width: 100%;
+      height: 400px;
+      object-fit: contain;
+    }
+  </style>
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -42,5 +70,34 @@
       </div>
     </div>
   </nav>
+
+  <div id="frameContainer">
+    <div class="carousel-frame">
+      <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Imagenes/angel.jpg" class="d-block" alt="Imagen 1">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/botes1.jpg" class="d-block" alt="Imagen 2">
+          </div>
+          <div class="carousel-item">
+            <img src="./Imagenes/corazones.jpg" class="d-block" alt="Imagen 3">
+          </div>
+        </div>
+        <!-- Botones de navegación -->
+        <a class="carousel-control-prev" href="#customCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#customCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
 </body>
 </html>
