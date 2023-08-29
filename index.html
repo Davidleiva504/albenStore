@@ -11,34 +11,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-  <style>
-     #frameContainer {
-      margin-left: 50px;
-      display:flex;
-      justify-content: left;
-      align-items: center;
-      height: 70vh;
-    }
-
-    /* Marco del carrusel */
-    .carousel-frame {
-      width: 40%;
-      border: 2px solid white;
-      overflow: hidden;
-    }
-
-    /* Estilo para el carrusel */
-    #customCarousel {
-      width: 100%;
-    }
-
-    /* Estilo para las imágenes dentro del carrusel */
-    #customCarousel .carousel-inner img {
-      width: 100%;
-      height: 400px;
-      object-fit: contain;
-    }
-  </style>
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
@@ -50,7 +22,7 @@
             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./paginas_ extras/abaut.html">Acerca</a>
+            <a class="nav-link" href="#">Acerca</a>
           </li>
           
           <li class="nav-item dropdown">
@@ -58,46 +30,60 @@
               Productos
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./paginas_ extras/P_Sublimado.html">Sublimado</a></li>
-              <li><a class="dropdown-item" href="./paginas_ extras/P_Seligrafia.html">Serigrafia</a></li>
-              <li><a class="dropdown-item" href="./paginas_ extras/P_grabado_Laser.html">Grabados laser</a></li>
+              <li><a class="dropdown-item" href="#">Sublimado</a></li>
+              <li><a class="dropdown-item" href="#">Serigrafia</a></li>
+              <li><a class="dropdown-item" href="#">Grabados laser</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./paginas_ extras/contacto.html">Contactanos</a>
+            <a class="nav-link" href="#">Contactanos</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <div id="frameContainer">
-    <div class="carousel-frame">
-      <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="./Imagenes/angel.jpg" class="d-block" alt="Imagen 1">
-          </div>
-          <div class="carousel-item">
-            <img src="./Imagenes/botes1.jpg" class="d-block" alt="Imagen 2">
-          </div>
-          <div class="carousel-item">
-            <img src="./Imagenes/corazones.jpg" class="d-block" alt="Imagen 3">
-          </div>
+  <div class="d-flex justify-content-center align-items-center" style="height: auto;">
+    <div id="customCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Imagenes/angel.jpg" class="d-block" alt="Imagen 1">
         </div>
-        <!-- Botones de navegación -->
-        <a class="carousel-control-prev" href="#customCarousel" role="button" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#customCarousel" role="button" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Siguiente</span>
-        </a>
+        <div class="carousel-item">
+          <img src="./Imagenes/botes1.jpg" class="d-block" alt="Imagen 2">
+        </div>
+        <div class="carousel-item">
+          <img src="./Imagenes/corazones.jpg" class="d-block" alt="Imagen 3">
+        </div>
       </div>
+      <!-- Botones de navegación -->
+      <a class="carousel-control-prev" href="#customCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#customCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
     </div>
   </div>
-
+  
+    <!-- Galeria de imagenes por categoria -->
+  
+    <header>
+    <h1>Sublimado</h1>
+  </header>
+  <div class="gallery">
+    <img src="./Imagenes/botes1.jpg" alt="Imagen 1">
+    <img src="./Imagenes/botes2.jpg" alt="Imagen 2">
+    <img src="./Imagenes/botes3.jpg" alt="Imagen 3">
+    <img src="./Imagenes/botes1.jpg" alt="Imagen 4">
+    <img src="./Imagenes/botes2.jpg" alt="Imagen 5">
+    <img src="./Imagenes/botes3.jpg" alt="Imagen 3">
+  </div>
 
 </body>
 </html>
+
+
+
