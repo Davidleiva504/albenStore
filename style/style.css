@@ -1,3 +1,7 @@
+body{
+  background-color:#E5E9F7; /* Cambiar el color de fondo */
+}
+
 /* Estilos para la barra de navegación con degradado de color */
 .navbar-expand-lg.bg-body-tertiary {
   background: linear-gradient(to right, #4d6de3, #203376);
@@ -77,4 +81,77 @@ header {
   transform: scale(1.05); /* Efecto de escala al pasar el ratón */
 }
 
- 
+
+
+/* Estilos para la sección de detalles de los productos */
+.product-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Tamaño adaptable */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilos para las imágenes de los productos */
+.product-images img {
+  width: 100%; /* Ancho del 100% del contenedor */
+  height: 300px; /* Altura automática para mantener la proporción */
+  border-radius: 15px; /* Bordes más suaves y redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-bottom: 20px; /* Espacio inferior entre imágenes */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto de escala al pasar el ratón */
+.product-images img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Estilos para los precios de los productos */
+.product-price {
+  font-weight: bold;
+  color: #FF5733; /* Color para destacar el precio */
+  margin-top: 10px;
+}
+
+/* Estilos para la sección de detalles de los productos */
+.product-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Tamaño adaptable */
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Estilos para las tarjetas de productos */
+.card {
+  border: none; /* Quita el borde por defecto de la tarjeta */
+  border-radius: 15px; /* Bordes más suaves y redondeados */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+}
+
+/* Estilos para las imágenes de los productos dentro de las tarjetas */
+.card .product-images img {
+  width: 100%; /* Ancho del 100% del contenedor */
+  height: auto; /* Altura automática para mantener la proporción */
+  border-top-left-radius: 15px; /* Bordes suaves solo en la parte superior izquierda */
+  border-top-right-radius: 15px;
+}
+
+/* Efecto de escala al pasar el ratón en las imágenes dentro de las tarjetas */
+.card .product-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Estilos para los precios de los productos dentro de las tarjetas */
+.card .product-price {
+  font-weight: bold;
+  color: #FF5733; /* Color para destacar el precio */
+  margin-top: 10px;
+  text-align: center; /* Centra el texto del precio */
+}
