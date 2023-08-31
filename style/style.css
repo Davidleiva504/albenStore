@@ -1,64 +1,76 @@
-    /* Estilos para la barra de navegación con degradado de color */
-    .navbar-expand-lg.bg-body-tertiary {
-        background: linear-gradient(to right, #4d6de3, #203376);
-         /*Color para la letras*/
-        
-    }
-    /* Cambiar el color del texto dentro de la barra de navegación */
-    .navbar-expand-lg.bg-body-tertiary .navbar-nav .nav-link {
-        color: white;
-        
-    }
-    /* Cambiar color del sub menu */
-    .dropdown-menu{
-      background: linear-gradient(to right, #4d6de3, #203376);
-      
-    }
-    /* Cambiar color de las letras del munu */
-    .dropdown-item{
-      color: white;
-    }
-    /*color de el logo de la empresa*/
-    .navbar-brand{
-      background: linear-gradient(to right, yellow 10%, rgb(7, 245, 213) 50%, red 30%, orange 90%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        display: inline-block;
-    }
+/* Estilos para la barra de navegación con degradado de color */
+.navbar-expand-lg.bg-body-tertiary {
+  background: linear-gradient(to right, #4d6de3, #203376);
+  border-radius: 0; /* Bordes suaves en la parte superior */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
 
-     /* Estilo para el carrusel */
-    #customCarousel {
-      width:1200px; /* Ancho del carrusel */
-      padding: 1.5%;
-    }
+/* Cambiar el color del texto dentro de la barra de navegación */
+.navbar-expand-lg.bg-body-tertiary .navbar-nav .nav-link {
+  color: white;
+}
 
-    /* Estilo para las imágenes dentro del carrusel */
-    #customCarousel .carousel-inner img {
-      width: 100%; /* Tamaño fijo de las imágenes */
-      height: 500px; /* Altura fija de las imágenes */
-      object-fit:fill;
-    }
+/* Cambiar color del sub menú */
+.dropdown-menu{
+  background: linear-gradient(to right, #4d6de3, #203376);
+  border-radius: 0; /* Bordes suaves */
+}
 
-    /* configuracion para la galeria de imagenes */
-    header {
-     background: linear-gradient(to right, #C7EEFF, #b0c0fa);;
-     color:black;
-     padding: 3px 0;
-     text-align: center;
-   }
-   .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 300px); /* Cambia el tamaño aquí */
-    gap: 20px;
-    padding: 20px;
-    justify-content: center; /* Centra la galería horizontalmente */
-  }
-  .gallery img {
-      width: 100%; /* Ancho del 100% del contenedor */
-      height: 300px; /* Altura fija */
-      object-fit: cover; /* Escala la imagen para llenar el espacio */
-      border: 1px solid #ddd;
-    }
+/* Cambiar color de las letras del menú */
+.dropdown-item{
+  color: white;
+}
+
+/* Color de el logo de la empresa */
+.navbar-brand{
+  background: linear-gradient(to right, yellow 10%, rgb(7, 245, 213) 50%, red 30%, orange 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+/* Estilo para el carrusel */
+#customCarousel {
+  width: 100%; /* Ancho del carrusel */
+  padding: 1.5%;
+}
+
+/* Estilo para las imágenes dentro del carrusel */
+#customCarousel .carousel-inner img {
+  width: 100%; /* Tamaño fijo de las imágenes */
+  height: auto; /* Altura automática para mantener la proporción */
+  border-radius: 10px; /* Bordes suaves y redondeados */
+}
+
+/* Configuración para la galería de imágenes */
+header {
+  background: linear-gradient(to right, #C7EEFF, #b0c0fa);
+  color: black;
+  padding: 20px 0; /* Mayor espacio en la parte superior e inferior */
+  text-align: center;
+  border-radius: 10px; /* Bordes suaves y redondeados */
+  margin-bottom: 20px; /* Espacio inferior entre secciones */
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Tamaño adaptable */
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 100%; /* Ancho del 100% del contenedor */
+  height: 300px; /* Altura fija */
+  object-fit: cover; /* Escala la imagen para llenar el espacio */
+  border-radius: 10px; /* Bordes suaves y redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease; /* Transición suave al pasar el ratón */
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* Efecto de escala al pasar el ratón */
+}
 
  
