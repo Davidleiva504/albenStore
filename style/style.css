@@ -31,8 +31,10 @@
 }
 
 /* Estilo para el carrusel */
+/* Estilo para el carrusel */
 #customCarousel {
-  width: 100%; /* Ancho del carrusel */
+  max-width: 800px; /* Ancho máximo del carrusel */
+  margin: 0 auto; /* Centrar horizontalmente */
   padding: 1.5%;
 }
 
@@ -41,7 +43,9 @@
   width: 100%; /* Tamaño fijo de las imágenes */
   height: auto; /* Altura automática para mantener la proporción */
   border-radius: 10px; /* Bordes suaves y redondeados */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
+
 
 /* Configuración para la galería de imágenes */
 header {
