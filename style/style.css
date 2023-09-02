@@ -26,12 +26,9 @@ body{
 }
 
 /* Color de el logo de la empresa */
-.navbar-brand{
-  background: linear-gradient(to right, yellow 10%, rgb(7, 245, 213) 50%, red 30%, orange 90%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  display: inline-block;
+.nav img {
+  width: 50px; /* Ajusta el ancho de la imagen según tus preferencias */
+  height: auto; /* Mantén la proporción de la imagen */
 }
 
 /* Estilo para el carrusel */
